@@ -1,0 +1,20 @@
+// @font-face {
+// 	font-family: "Forum";
+// 	src: url("../fonts/Forum-regular.woff2") format("woff2"), url("../fonts/Forum-regular.woff") format("woff");
+// 	font-display: swap;
+// 	font-weight: 400;
+// 	font-style: normal;
+// }
+@mixin font($name, $url, $weight, $style) {
+	@font-face {
+		font-family: "#{$name}";
+		src: url("../#{$url}.woff2") format("woff2"), url("../#{$url}.woff") format("woff");
+		font-display: swap;
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
+@include font(Gilroy, fonts/Gilroy-Regular, 400, normal);
+@include font(Gilroy, fonts/Gilroy-Semibold, 600, normal);
+@include font(Gilroy, fonts/Gilroy-Bold, 700, normal);
