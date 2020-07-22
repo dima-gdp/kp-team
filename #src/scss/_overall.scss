@@ -58,3 +58,15 @@ body {
 		line-height: 1.1;
 	}
 }
+
+.input {
+	padding: 0px 20px 0px 24px;
+	height: 72px;
+	color: #999999;
+	font-size: 18px;
+	background: #ffffff;
+	border-radius: 5px;
+	@media (max-width: 576px) {
+		height: 55px;
+	}
+}

@@ -438,3 +438,241 @@
 		}
 	}
 }
+
+//about//////////////////////////////////////////////////
+
+.about {
+	// .about__container
+	&__container {
+		padding-top: 8%;
+		padding-bottom: 7.3%;
+		@media (max-width: 768px) {
+			padding-top: 16%;
+		}
+	}
+	// .about__title
+	&__title {
+		max-width: 435px;
+		margin: 0px 0px 31px 13.1%;
+		@media (max-width: 992px) {
+			margin: 0px 0px 50px 0px;
+			text-align: center;
+		}
+	}
+	// .about__grid
+	&__grid {
+		margin: 0px 0px 7.2% 10%;
+		display: grid;
+		grid-template-columns: minmax(200px, 520px) 479px;
+		grid-column-gap: 50px;
+		grid-row-gap: 62px;
+		align-items: center;
+		@media (max-width: 1300px) {
+			margin: 0px 0px 7.2% 0px;
+			grid-template-columns: 30% 1fr;
+			grid-column-gap: 40px;
+			grid-row-gap: 50px;
+		}
+		@media (max-width: 768px) {
+			grid-template-columns: 1fr;
+			grid-column-gap: 40px;
+			grid-row-gap: 50px;
+		}
+	}
+	// .about__item
+	&__item {
+	}
+	// .about__subtitle
+	&__subtitle {
+		margin: 0px 0px 15px 0px;
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 40px;
+		color: $black;
+	}
+	// .about__text
+	&__text {
+		margin-bottom: 27px;
+		line-height: 28px;
+		color: $black;
+		@media (max-width: 992px) {
+			margin-bottom: 10px;
+		}
+	}
+	// .about__integrate
+	&__integrate {
+	}
+	// .about__order
+	&__order {
+	}
+}
+
+.about-img {
+	height: 557px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	&_1 {
+		background-image: url("../img/tablet_1.png");
+	}
+	&_2 {
+		background-image: url("../img/tablet_2.png");
+	}
+	&_3 {
+		margin-top: 12px;
+		background-image: url("../img/tablet_3.png");
+	}
+	@media (max-width: 1300px) {
+		height: auto;
+		padding-bottom: 80%;
+		background-size: contain;
+	}
+}
+
+.integrate {
+	// .integrate__item
+	&__item {
+		padding-left: 21px;
+		font-size: 18px;
+		line-height: 28px;
+		color: $black;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 6px;
+			left: 0;
+			width: 15px;
+			height: 15px;
+			background: url("../icons/sprite.svg#plus") center / cover no-repeat;
+		}
+		&_minus {
+			color: #e46868;
+			&::before {
+				background: url("../icons/sprite.svg#minus") center / cover no-repeat;
+			}
+		}
+	}
+}
+
+.order-about {
+	display: flex;
+	max-width: 1180px;
+	margin: 0 auto;
+	padding-bottom: 83px;
+	background: #eff7ff;
+	border: 2px solid #ffffff;
+	border-radius: 15px;
+	@media (max-width: 576px) {
+		margin: 0px -20px 0px -20px;
+	}
+	// .order-about__image
+	&__image {
+		margin: 81px 7.7% 0px 4.3%;
+		flex: 0 0 378px;
+		height: 322px;
+		background: url("../img/form.png") center / cover no-repeat;
+		@media (max-width: 992px) {
+			display: none;
+		}
+	}
+	// .order-about__form
+	&__form {
+		margin: 84px 58px 0px 0px;
+		@media (max-width: 992px) {
+			margin: 84px 50px 0px 50px;
+		}
+		@media (max-width: 992px) {
+			margin: 84px 20px 0px 20px;
+		}
+	}
+}
+.form-about {
+	// .form-about__title
+	&__title {
+	}
+	// .form-about__text
+	&__text {
+		margin-bottom: 50px;
+		@media (max-width: 992px) {
+			margin-bottom: 40px;
+		}
+	}
+	// .form-about__inputs
+	&__inputs {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@media (max-width: 992px) {
+			justify-content: flex-start;
+		}
+	}
+	// .form-about__input
+	&__name {
+		flex: 0 1 287px;
+		margin-bottom: 20px;
+		@media (max-width: 1300px) {
+			flex: 0 1 100%;
+		}
+		@media (max-width: 992px) {
+			flex: 0 1 70%;
+		}
+		@media (max-width: 768px) {
+			flex: 0 1 100%;
+		}
+	}
+	// .form-about__tel
+	&__tel {
+		flex: 0 1 294px;
+		margin-bottom: 20px;
+		@media (max-width: 1300px) {
+			flex: 0 1 100%;
+		}
+		@media (max-width: 992px) {
+			flex: 0 1 70%;
+		}
+		@media (max-width: 768px) {
+			flex: 0 1 100%;
+		}
+	}
+	// .form-about__btn
+	&__btn {
+		flex: 0 1 287px;
+		@media (max-width: 1300px) {
+			margin-bottom: 30px;
+		}
+		@media (max-width: 576px) {
+			padding: 0;
+			height: 55px;
+		}
+	}
+	// .form-about__att
+	&__att {
+		flex: 0 1 294px;
+		padding-right: 18px;
+		font-size: 14px;
+		line-height: 24px;
+		color: #999999;
+		@media (max-width: 992px) {
+			margin-left: 20px;
+		}
+	}
+}
+
+//stack////////////////////
+
+.stack {
+	background: #eff7ff;
+	// .stack__container
+	&__container {
+	}
+	// .stack__title
+	&__title {
+	}
+	// .stack__list
+	&__list {
+	}
+	// .stack__item
+	&__item {
+	}
+}
