@@ -1420,6 +1420,138 @@ body {
   background: #eff7ff;
 }
 
+.stack__container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.stack__title {
+  margin: 0px 0px 50px 12.2%;
+}
+
+.stack__list {
+  margin: 0px 12.2% 0px 12.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stack__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 380px;
+          flex: 0 1 380px;
+  height: 88px;
+  background: #ffffff;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stack__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.stack__item_1 {
+  background-image: url("../img/vuejs.png");
+}
+
+.stack__item_2 {
+  background-image: url("../img/django.png");
+}
+
+.stack__item_3 {
+  background-image: url("../img/elastic.png");
+}
+
+.cases__container {
+  padding-top: 7.3%;
+}
+
+.cases__title {
+  margin: 0px 0px 50px 12.2%;
+}
+
+.cases__grid {
+  display: grid;
+  grid-template-columns: 49.6% 411px;
+  grid-column-gap: 50px;
+  grid-row-gap: 39px;
+  margin: 0px 0px 0px 12.2%;
+}
+
+.cases__image {
+  padding-bottom: 58.6%;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cases__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.cases__logo {
+  padding-top: 33px;
+}
+
+.content-cases {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.content-cases__title {
+  margin-bottom: 28px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.content-cases__stats {
+  padding-left: 111px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  position: relative;
+}
+
+.content-cases__stats:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.content-cases__value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 96px;
+  height: 56px;
+  background: #eff7ff;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #3454f5;
+}
+
 .webp .first__image {
   background: url(../img/first.webp) center/800px 653px no-repeat;
 }
@@ -1458,6 +1590,18 @@ body {
 
 .webp .order-about__image {
   background: url(../img/form.webp) center/cover no-repeat;
+}
+
+.webp .stack__item_1 {
+  background-image: url(../img/vuejs.webp);
+}
+
+.webp .stack__item_2 {
+  background-image: url(../img/django.webp);
+}
+
+.webp .stack__item_3 {
+  background-image: url(../img/elastic.webp);
 }
 
 @media (min-width: 992px) {
@@ -1556,6 +1700,18 @@ body {
 
   .form-about__btn {
     margin-bottom: 30px;
+  }
+
+  .stack__title {
+    margin: 0px 0px 50px 0px;
+  }
+
+  .stack__list {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .cases__grid {
+    margin: 0px 0px 0px 0px;
   }
 }
 
@@ -1717,6 +1873,42 @@ body {
   .form-about__att {
     margin-left: 20px;
   }
+
+  .stack__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .stack__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 51%;
+            flex: 0 0 51%;
+  }
+
+  .stack__item:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .cases__title {
+    margin: 0px 0px 50px 0;
+  }
+
+  .cases__grid {
+    grid-template-columns: 40% 1fr;
+  }
+
+  .cases__image img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .cases__image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1771,6 +1963,16 @@ body {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
   }
+
+  .stack__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 380px;
+            flex: 0 1 380px;
+  }
+
+  .cases__grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1813,6 +2015,15 @@ body {
   .form-about__btn {
     padding: 0;
     height: 55px;
+  }
+
+  .content-cases__stats {
+    padding-left: 80px;
+  }
+
+  .content-cases__value {
+    width: 70px;
+    height: 45px;
   }
 }
 
