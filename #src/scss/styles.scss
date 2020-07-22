@@ -221,18 +221,7 @@
 	&__title {
 		max-width: 630px;
 		margin-bottom: 25px;
-		font-weight: bold;
-		font-size: 40px;
-		line-height: 48px;
 		color: $black;
-		@media (max-width: 992px) {
-			text-align: center;
-			max-width: none;
-		}
-		@media (max-width: 576px) {
-			font-size: 10vw;
-			line-height: 1.1;
-		}
 	}
 	// .internet__subtitle
 	&__subtitle {
@@ -248,7 +237,7 @@
 	// .internet__row
 	&__row {
 		display: flex;
-		padding-bottom: 100px;
+		padding-bottom: 105px;
 		@media (max-width: 992px) {
 			flex-wrap: wrap;
 		}
@@ -331,5 +320,121 @@
 		font-size: 18px;
 		line-height: 28px;
 		color: $black;
+	}
+}
+
+//tsekh//////////////////////////////////////////////////
+
+.tsekh {
+	background-color: $blue;
+	// .tsekh__container
+	&__container {
+		padding: 16.8% 0px 16% 0px;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+	}
+	// .tsekh__logo
+	&__logo {
+		width: 210px;
+		height: 65px;
+		margin-bottom: 61px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	// .tsekh__text
+	&__text {
+		margin: 0 auto;
+		max-width: 750px;
+		color: #fff;
+	}
+	// .tsekh__decor
+	&__decor {
+	}
+	// .tsekh__arrow
+	&__arrow {
+		position: absolute;
+		width: 49px;
+		height: 110px;
+		background: url("../icons/sprite.svg#arrow_up") center / cover no-repeat;
+		&:nth-child(1) {
+			top: 17.5%;
+			left: 13.8%;
+			opacity: 0.6;
+			@media (max-width: 1300px) {
+			}
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
+		&:nth-child(2) {
+			top: 16.8%;
+			left: 39.1%;
+			opacity: 0.8;
+			@media (max-width: 1300px) {
+				top: 2.8%;
+			}
+			@media (max-width: 992px) {
+				display: none;
+			}
+		}
+		&:nth-child(3) {
+			top: 10.8%;
+			right: 26.7%;
+			opacity: 0.5;
+			@media (max-width: 992px) {
+				top: 4.8;
+			}
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
+		&:nth-child(4) {
+			bottom: 28.4%;
+			left: 15.4%;
+			opacity: 0.9;
+			@media (max-width: 1300px) {
+				bottom: 7.4%;
+			}
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
+		&:nth-child(5) {
+			top: 48%;
+			right: 13%;
+			opacity: 0.8;
+			@media (max-width: 1300px) {
+				right: 4%;
+			}
+			@media (max-width: 992px) {
+				display: none;
+			}
+		}
+		&:nth-child(6) {
+			bottom: -11px;
+			left: 34.1%;
+			opacity: 0.6;
+			@media (max-width: 992px) {
+				display: none;
+			}
+		}
+		&:nth-child(7) {
+			bottom: 10.9%;
+			right: 22.4%;
+			@media (max-width: 992px) {
+				bottom: 1.9%;
+			}
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
+		@media (max-width: 1600px) {
+			width: 35px;
+			height: 90px;
+		}
 	}
 }
