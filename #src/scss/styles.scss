@@ -726,6 +726,7 @@
 	// .cases__container
 	&__container {
 		padding-top: 7.3%;
+		padding-bottom: 7.5%;
 	}
 	// .cases__title
 	&__title {
@@ -803,6 +804,11 @@
 		&:not(:last-child) {
 			margin-bottom: 24px;
 		}
+		@media (max-width: 768px) {
+			&:not(:last-child) {
+				margin-bottom: 40px;
+			}
+		}
 		@media (max-width: 576px) {
 			padding-left: 80px;
 		}
@@ -823,6 +829,132 @@
 		@media (max-width: 576px) {
 			width: 70px;
 			height: 45px;
+		}
+	}
+}
+
+//price//////////////////////////////////////////////
+
+.price {
+	background: $blue;
+	// .price__container
+	&__container {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	// .price__title
+	&__title {
+		margin: 0px 0px 30px 12.2%;
+		color: #ffffff;
+		@media (max-width: 992px) {
+			margin: 0px 0px 30px 0;
+		}
+	}
+	// .price__content
+	&__content {
+		display: flex;
+		margin: 0px 0px 48px 12.2%;
+		@media (max-width: 992px) {
+			margin: 0px 0px 48px 0;
+		}
+		@media (max-width: 576px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	// .price__text
+	&__text {
+		flex: 0 1 344px;
+		margin-right: 15px;
+		line-height: 28px;
+		color: #ffffff;
+		@media (max-width: 576px) {
+			margin-bottom: 25px;
+		}
+	}
+	// .price__hour
+	&__hour {
+		line-height: 28px;
+		color: #ffffff;
+		display: flex;
+		align-items: center;
+		&::before {
+			content: "1 190 ₽";
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 20px;
+			width: 144px;
+			height: 56px;
+			background: #ffffff;
+			border-radius: 5px;
+			font-weight: bold;
+			font-size: 24px;
+			color: $black;
+			@media (max-width: 768px) {
+				width: 111px;
+			}
+		}
+	}
+	// .price__form
+	&__form {
+		margin: 0px 0px 0 12.2%;
+		@media (max-width: 992px) {
+			margin: 0px 0px 0 0;
+		}
+	}
+	// .price__att
+	&__att {
+		margin: 20px 0px 0 12.2%;
+		line-height: 24px;
+		color: #ffffff;
+		@media (max-width: 992px) {
+			margin: 20px 0px 0 0px;
+		}
+	}
+}
+
+.form-price {
+	display: flex;
+	@media (max-width: 768px) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	// .form-price__name
+	&__name {
+		flex: 0 1 380px;
+		margin-right: 14px;
+		@media (max-width: 768px) {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+	// .form-price__tel
+	&__tel {
+		flex: 0 1 380px;
+		margin-right: 14px;
+		@media (max-width: 768px) {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+	// .form-price__btn
+	&__btn {
+		flex: 0 1 391px;
+		height: 72px;
+		background: #ffe818;
+		border-radius: 5px;
+		line-height: 24px;
+		font-weight: 700;
+		color: $black;
+		@media (max-width: 1300px) {
+			flex: 0 1 250px;
+		}
+		@media (max-width: 768px) {
+			flex: 0 1 350px;
+		}
+		@media (max-width: 576px) {
+			height: 60px;
 		}
 	}
 }
