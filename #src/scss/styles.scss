@@ -114,7 +114,7 @@
 		@media (max-width: 992px) {
 			font-size: 40px;
 		}
-		@media (max-height: 618px) {
+		@media (max-height: 618px) and (max-width: 992px) {
 			font-size: 30px;
 		}
 	}

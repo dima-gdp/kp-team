@@ -1766,6 +1766,12 @@ body {
   }
 }
 
+@media (max-height: 618px) and (max-width: 992px) {
+  .nav-header__link {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .first__container {
     display: block;
@@ -1988,11 +1994,5 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
-  }
-}
-
-@media (max-height: 618px) {
-  .nav-header__link {
-    font-size: 30px;
   }
 }
