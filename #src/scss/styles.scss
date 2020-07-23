@@ -7,6 +7,12 @@
 
 //header ///////
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 70;
 	// .header__container
 	&__container {
 		display: flex;
@@ -34,6 +40,7 @@
 			justify-content: flex-start;
 			background-color: #e5f2ff;
 			overflow: auto;
+			z-index: 3;
 			&::before {
 				content: "";
 				position: fixed;
@@ -56,7 +63,7 @@
 		display: none;
 		@media (max-width: 992px) {
 			display: flex;
-			z-index: 2;
+			z-index: 4;
 		}
 	}
 }
@@ -122,6 +129,7 @@
 
 .first {
 	padding-bottom: 100px;
+	padding-top: 111px;
 	// .first__container
 	&__container {
 		max-width: 1560px;

@@ -153,18 +153,20 @@
 					</div>
 					<div class="about__order order-about">
 						<div class="order-about__image"></div>
-						<div class="order-about__form form-about">
+						<form class="order-about__form form-about">
 							<h2 class="form-about__title about__subtitle">Заказать расчет проекта</h2>
 							<p class="form-about__text about__text">Опишите цели проекта, задачи и нужный стек разработки, если это
 								важно. Мы рассчитаем примерную стоимость в пределах одного дня</p>
 							<div class="form-about__inputs">
-								<input class="form-about__name input" type="text" name="name" placeholder="Имя">
-								<input class="form-about__tel input" type="tel" name="phone">
+								<input class="form-about__name input" type="text" name="name" placeholder="Имя"
+									data-validate-field="name">
+								<input class="form-about__tel input" type="tel" name="phone" data-validate-field="tel"
+									placeholder="Номер телефона">
 								<button class="form-about__btn btn-blue" type="submit">Заказать расчет</button>
 								<p class="form-about__att">Нажимая кнопку "Заказать расчет", я даю согласие
 									на обработку своих персональных данных</p>
 							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -242,8 +244,9 @@
 						<p class="price__hour">в час</p>
 					</div>
 					<form class="price__form form-price">
-						<input class="form-price__name input" type="text" name="name" placeholder="Имя">
-						<input class="form-price__tel input" type="tel" name="phone">
+						<input class="form-price__name input" type="text" name="name" placeholder="Имя" data-validate-field="name">
+						<input class="form-price__tel input" type="tel" name="phone" data-validate-field="tel"
+							placeholder="Номер телефона">
 						<button class="form-price__btn" type="submit">Заказать расчет</button>
 					</form>
 					<p class="price__att">Нажимая кнопку "отправить", я даю согласие
@@ -366,6 +369,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/libs.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

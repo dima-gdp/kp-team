@@ -918,7 +918,7 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.no-scroll {
+.disable-scroll {
   overflow: hidden;
   height: 100vh;
   position: fixed;
@@ -1012,6 +1012,15 @@ body {
   bottom: calc(50% - 1px);
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 70;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1081,6 +1090,7 @@ body {
 
 .first {
   padding-bottom: 100px;
+  padding-top: 111px;
 }
 
 .first__container {
@@ -2164,6 +2174,7 @@ body {
             justify-content: flex-start;
     background-color: #e5f2ff;
     overflow: auto;
+    z-index: 3;
   }
 
   .header__nav::before {
@@ -2179,7 +2190,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    z-index: 2;
+    z-index: 4;
   }
 
   .nav-header__list {
