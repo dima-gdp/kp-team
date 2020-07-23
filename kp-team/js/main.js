@@ -22,7 +22,7 @@ const enableScroll = () => {
 burger.addEventListener('click', function () {
 	menu.classList.toggle('active');
 	burger.classList.toggle('active');
-	document.body.dataset.position ? enableScroll() : disableScroll()
+	document.body.classList.contains('disable-scroll') ? enableScroll() : disableScroll()
 });
 
 // Валидации форм
