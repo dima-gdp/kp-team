@@ -5,7 +5,7 @@
 @import "_overall.scss";
 @import "templates/_burger.scss";
 
-//header ///////
+//header ///////////////////////////////////////////////////////////
 .header {
 	position: fixed;
 	top: 0;
@@ -20,9 +20,15 @@
 		align-items: center;
 		padding-top: 32px;
 		padding-bottom: 30px;
+		@media (max-width: 576px) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
 	}
 	// .header__logo
 	&__logo {
+		position: relative;
+		z-index: 4;
 	}
 	// .header__nav
 	&__nav {
@@ -41,6 +47,7 @@
 			background-color: #e5f2ff;
 			overflow: auto;
 			z-index: 3;
+			transition: top 0.3s;
 			&::before {
 				content: "";
 				position: fixed;
@@ -48,6 +55,9 @@
 				left: 0;
 				height: 107px;
 				width: 100%;
+				@media (max-width: 576px) {
+					height: 85.4px;
+				}
 			}
 		}
 		&.active {
@@ -95,6 +105,12 @@
 		font-weight: 600;
 		font-size: 16px;
 		letter-spacing: 0.100962px;
+		transition: color 0.3s;
+		@media (min-width: 992px) {
+			&:hover {
+				color: $blue;
+			}
+		}
 		@media (max-width: 992px) {
 			font-size: 40px;
 		}
@@ -107,11 +123,17 @@
 		margin-left: vw(237);
 		width: 207px;
 		height: 49px;
-		border: 2px solid #333333;
+		border: 2px solid $black;
 		border-radius: 5px;
 		background: transparent;
 		font-weight: bold;
 		font-size: 14px;
+		transition: background-color 0.3s;
+		@media (min-width: 992px) {
+			&:hover {
+				background-color: #687ff2;
+			}
+		}
 		@media (max-width: 1300px) {
 			margin-left: 5.5vw;
 			width: 165px;
@@ -130,6 +152,12 @@
 .first {
 	padding-bottom: 100px;
 	padding-top: 111px;
+	@media (max-width: 992px) {
+		padding-top: 107.4px;
+	}
+	@media (max-width: 576px) {
+		padding-top: 85.4px;
+	}
 	// .first__container
 	&__container {
 		max-width: 1560px;
@@ -616,6 +644,9 @@
 		@media (max-width: 992px) {
 			justify-content: flex-start;
 		}
+		@media (max-width: 576px) {
+			justify-content: center;
+		}
 	}
 	// .form-about__input
 	&__name {
@@ -669,7 +700,7 @@
 	}
 }
 
-//stack////////////////////
+//stack////////////////////////////////////////////////////////////////
 
 .stack {
 	background: #eff7ff;
@@ -730,7 +761,7 @@
 	}
 }
 
-//case////////////////////
+//case/////////////////////////////////////////////////////////////////////////////////
 
 .cases {
 	// .cases__container
@@ -788,6 +819,35 @@
 			}
 		}
 	}
+	// .cases__hovered
+	&__hovered {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		font-weight: 600;
+		font-size: 16px;
+		color: #ffffff;
+		background: $blue;
+		opacity: 0;
+		transition: opacity 0.3s;
+		&::before {
+			content: "";
+			width: 48px;
+			height: 48px;
+			background: url("../icons/sprite.svg#arrow_hover") center / cover no-repeat;
+		}
+		@media (min-width: 992px) {
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
 	// .cases__content
 	&__content {
 	}
@@ -842,7 +902,7 @@
 	}
 }
 
-//price//////////////////////////////////////////////
+//price/////////////////////////////////////////////////////////////////////////////
 
 .price {
 	background: $blue;
@@ -956,6 +1016,12 @@
 		line-height: 24px;
 		font-weight: 800;
 		color: $black;
+		transition: color 0.3s;
+		@media (min-width: 992px) {
+			&:hover {
+				color: $blue;
+			}
+		}
 		@media (max-width: 1300px) {
 			flex: 0 1 250px;
 		}
@@ -968,7 +1034,7 @@
 	}
 }
 
-//team/////////////////////////////////////
+//team///////////////////////////////////////////////////////////////////////////
 
 .team {
 	// .team__container
@@ -1147,7 +1213,7 @@
 		background: #ffffff;
 		border-radius: 4px;
 		font-size: 12px;
-		color: #333333;
+		color: $black;
 	}
 	// .item-extra__btn
 	&__btn {
@@ -1157,6 +1223,12 @@
 		width: 80px;
 		height: 80px;
 		background: $blue url("../icons/sprite.svg#arrow_hover") center / contain no-repeat;
+		transition: background-color 0.3s;
+		@media (min-width: 992px) {
+			&:hover {
+				background-color: #ffe818;
+			}
+		}
 		@media (max-width: 576px) {
 			width: 60px;
 			height: 60px;
@@ -1235,6 +1307,12 @@
 		font-size: 14px;
 		line-height: 20px;
 		color: #ffffff;
+		transition: color 0.3s;
+		@media (min-width: 992px) {
+			&:hover {
+				color: $blue;
+			}
+		}
 		&_tel {
 			&::before {
 				content: "";

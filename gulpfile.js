@@ -59,7 +59,7 @@ function browserSync() {
 
 function html() {
 	return src(path.src.html)
-		.pipe(webpHTML())
+		// .pipe(webpHTML())
 		.pipe(fileinclude())
 		.pipe(dest(path.build.html))
 		.pipe(browsersync.stream())
@@ -97,7 +97,7 @@ function css_build() {
 
 function libs_scss() {
 	return gulp.src([
-		'node_modules/swiper/css/swiper.min.css',
+		// 'node_modules/swiper/css/swiper.min.css',
 		'node_modules/just-validate/dist/css/justValidateTooltip.min.css'
 	])
 		.pipe(concat('_libs.scss'))

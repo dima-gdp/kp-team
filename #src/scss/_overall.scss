@@ -43,6 +43,12 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	color: #fff;
+	transition: background-color 0.3s;
+	@media (min-width: 992px) {
+		&:hover {
+			background-color: #ffe818;
+		}
+	}
 }
 
 .title {
