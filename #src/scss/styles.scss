@@ -1309,6 +1309,7 @@
 		line-height: 20px;
 		color: #ffffff;
 		transition: color 0.3s;
+		font-style: normal;
 		@media (min-width: 992px) {
 			&:hover {
 				color: $blue;

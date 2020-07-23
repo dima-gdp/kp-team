@@ -1243,6 +1243,7 @@ body {
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
+  font-style: normal;
 }
 
 .footer__link_tel::before {
